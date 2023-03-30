@@ -10,13 +10,13 @@ class Counter extends Component {
         fontWeight: 'bold',
     }
 
-    constructor() {
-        super();
-        this.handleIncrement = this.handleIncrement.bind(this)
-    }
+    // constructor() {
+    //     super();
+    //     this.handleIncrement = this.handleIncrement.bind(this)
+    // }
 
-    handleIncrement() {
-        this.state.count += 1;
+    handleIncrement = () => {
+        this.state.count = this.state.count + 1;
     }
 
     render() {
